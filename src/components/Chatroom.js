@@ -17,13 +17,18 @@ function Chatroom(props) {
     const [tempAuth, setTempAuth] = useState(false);
 
     useEffect(() => {
+        // Scroll to the bottom
+        setTimeout(() => { 
+            document.getElementById("bottomChat").scrollIntoView({ behavior: "smooth" });
+        }, 1300);
+        
         // Show Room passwordModal if the room needs a password
         if(roomInfo.requirePassword) {
             setIsNotAuthenticated(true);
         } else {
             setIsNotAuthenticated(false);
         }
-    }, [roomInfo.requirePassword])
+    }, [roomInfo.requirePassword, messagesEnd])
 
     useEffect(() => {
         // Read all messages from firestore and store into conversation array
@@ -33,7 +38,7 @@ function Chatroom(props) {
             querySnapshot.forEach((doc) => {
                 convoTemp.push(doc);
             });
-
+            document.getElementById("bottomChat").scrollIntoView({ behavior: "smooth" });
             setConversation(convoTemp);
         }); 
 
@@ -150,7 +155,7 @@ function Chatroom(props) {
                 }  
                 
                 {/* For scrollIntoView  */}
-                <div ref={(el) => { setMessagesEnd(el) }}> </div>
+                <div id="bottomChat" ref={(el) => { setMessagesEnd(el) }}> </div>
             </div>
             
 

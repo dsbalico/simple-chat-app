@@ -30,7 +30,7 @@ function Message(props) {
                         <div className="flex items-end justify-end">
                             <div className="flex flex-col space-y-2 text-xs max-w-xs mx-2 order- items-end">
                                 <div>
-                                    <span className="px-4 py-2 rounded-lg inline-block float-right rounded-br-none bg-blue-600 text-white ">
+                                    <span className="px-4 py-2 rounded-lg inline-block max-w-sm break-all float-right rounded-br-none bg-blue-600 text-white ">
                                         { props.message.Message }
                                     </span> <br/>
                                     <small  className="float-right text-gray-600">
@@ -47,7 +47,7 @@ function Message(props) {
                         <div className="flex items-end">
                             <div className="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
                                 <div>
-                                    <span className="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-800 text-gray-100">
+                                    <span className="px-4 py-2 rounded-lg inline-block max-w-sm break-all rounded-bl-none bg-gray-800 text-gray-100">
                                         { props.message.Message }
                                     </span> <br/>
                                     <small className="text-gray-600">
