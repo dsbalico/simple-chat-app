@@ -38,6 +38,7 @@ function Chatroom(props) {
             querySnapshot.forEach((doc) => {
                 convoTemp.push(doc);
             });
+
             document.getElementById("bottomChat").scrollIntoView({ behavior: "smooth" });
             setConversation(convoTemp);
         }); 
@@ -94,6 +95,7 @@ function Chatroom(props) {
             messagesEnd.scrollIntoView({ behavior: "smooth" });
         }, 200);
     }
+
 
     return (
         <div className="bg-gray-900 flex flex-col h-screen">
