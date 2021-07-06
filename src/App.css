@@ -1,0 +1,8 @@
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #48bb78;
+}
+
+.h-screen-80 {
+    height: 80vh;
+}
