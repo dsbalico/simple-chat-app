@@ -9,7 +9,8 @@ function RoomPasswordModal(props) {
         tempAuth, 
         setIsNotAuthenticated, 
         cancelButtonRef, 
-        roomPassword } = props;
+        roomPassword,
+        history } = props;
 
     const handleSubmitPassword = (event) => {
         event.preventDefault();
@@ -80,14 +81,20 @@ function RoomPasswordModal(props) {
                                     </div>
                                 </div>
                                 <div className="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse text-center">
-                                <button
-                                    
-                                    type="submit"
-                                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
-                                >
-                                    Enter Room
-                                </button>
-                                <p id="displayError" className="text-center text-xs text-red-800 hidden">Incorrect Password</p>   
+                                    <button
+                                        type="submit"
+                                        className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                                    >
+                                        Enter Room
+                                    </button>
+                                    <button
+                                        type="button"
+                                        onClick={() => { history.push("/") }}
+                                        className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                                    >
+                                        Back
+                                    </button>
+                                    <p id="displayError" className="text-center text-xs text-red-800 hidden">Incorrect Password</p>   
                                 </div>
                             </form>
                         </div>

@@ -190,7 +190,8 @@ function Chatroom(props) {
                 setTempAuth={setTempAuth}
                 isNotAuthenticated={ isNotAuthenticated }
                 setIsNotAuthenticated={ setIsNotAuthenticated }
-                roomPassword={roomInfo.password} />
+                roomPassword={roomInfo.password} 
+                history={props.history}/>
         </div>
     )
 }
