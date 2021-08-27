@@ -24,7 +24,7 @@ function Dashboard(props) {
             }) 
         }
         else {
-            db.collection("Rooms").where("roomName", "==", searchText).onSnapshot((querySnapshot) => {
+            db.collection("Rooms").where("roomName", ">=", searchText).where("roomName", "<", searchText + 'z').onSnapshot((querySnapshot) => {
                 let roomsTemp = [];
         
                 querySnapshot.forEach((doc) => {

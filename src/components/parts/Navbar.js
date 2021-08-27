@@ -39,7 +39,11 @@ function Navbar(props) {
                                         <button className="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                                             <p onClick={() => { setOpen(true) }}>Create Room</p>
                                         </button>
-                                    ) : null
+                                    ) : (
+                                        <button className="p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                                            <p onClick={() => { redirectTo("") }}>Back to Home</p>
+                                        </button>
+                                    )
                                 }
                                 
                                 {/* Profile dropdown */}
@@ -65,22 +69,28 @@ function Navbar(props) {
                                             leaveTo="transform opacity-0 scale-95"
                                         >
                                             <Menu.Items static className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" >
-                                                <Menu.Item>
-                                                    {
-                                                        ({ active }) => (
-                                                            
-                                                            <p
-                                                                onClick={ () => redirectTo(profile ? "" : "profile") }
-                                                                className={classNames(
-                                                                    active ? 'bg-gray-100' : '',
-                                                                    'block px-4 py-2 text-sm text-gray-700 cursor-pointer'
-                                                                )}
-                                                                >
-                                                                {profile ? "Back to Home" : "Your Profile"}
-                                                            </p>
-                                                        )
-                                                    }
-                                                </Menu.Item>
+                                                
+                                                {
+                                                    !profile ? (
+                                                        <Menu.Item>
+                                                            {
+                                                                ({ active }) => (
+                                                                    
+                                                                    <p
+                                                                        onClick={ () => redirectTo("profile") }
+                                                                        className={classNames(
+                                                                            active ? 'bg-gray-100' : '',
+                                                                            'block px-4 py-2 text-sm text-gray-700 cursor-pointer'
+                                                                        )}
+                                                                        >
+                                                                        Your Profile
+                                                                    </p>
+                                                                )
+                                                            }
+                                                        </Menu.Item> 
+
+                                                    ) : null
+                                                }
 
                                                 <Menu.Item>
                                                     {

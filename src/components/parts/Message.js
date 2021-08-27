@@ -34,7 +34,7 @@ function Message(props) {
                                         className="px-4 py-2 rounded-lg inline-block max-w-sm break-all float-right rounded-br-none bg-blue-600 text-white "
                                         dangerouslySetInnerHTML={{
                                             __html: props.message.Message.replace(/(https?:\/\/[^\s]+)/g, (url) => {
-                                                return '<a href=' + url + ' class="text-red-300 hover:text-red-400" >' + url + '</a>'
+                                                return '<a href=' + url + ' class="underline hover:text-gray-300" >' + url + '</a>'
                                              })
                                         }}
                                         > 
