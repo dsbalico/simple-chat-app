@@ -3,6 +3,10 @@
 	ChatRoom
 </h1>
 
+<a href="https://app.netlify.com/sites/thechatroom/deploys" target="_blank">
+	https://thechatroom.netlify.app/login
+</a>
+
 ![Chatroom](https://firebasestorage.googleapis.com/v0/b/chatroom-9bbc0.appspot.com/o/room.png?alt=media&token=81770376-8e31-422b-8e7a-907d93a6f7c3)
 
 <p align="center">
@@ -26,5 +30,5 @@ yarn install
 
 2. Start the development server
 ```sh
-npm start
+yarn start
 ```
