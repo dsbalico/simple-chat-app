@@ -4,8 +4,8 @@
 </h1>
 
 <p align="center">
-	<a  href="https://app.netlify.com/sites/thechatroom/deploys" target="_blank">
-		https://thechatroom.netlify.app/login
+	<a  href="https://thechatroom.netlify.app/login" target="_blank">
+		https://thechatroom.netlify.app/
 	</a>
 </p>
 
