@@ -3,9 +3,11 @@
 	ChatRoom
 </h1>
 
-<a align="center" href="https://app.netlify.com/sites/thechatroom/deploys" target="_blank">
-	https://thechatroom.netlify.app/login
-</a>
+<p align="center">
+	<a  href="https://app.netlify.com/sites/thechatroom/deploys" target="_blank">
+		https://thechatroom.netlify.app/login
+	</a>
+</p>
 
 ![Chatroom](https://firebasestorage.googleapis.com/v0/b/chatroom-9bbc0.appspot.com/o/room.png?alt=media&token=81770376-8e31-422b-8e7a-907d93a6f7c3)
 
