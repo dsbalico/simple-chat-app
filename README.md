@@ -3,7 +3,7 @@
 	ChatRoom
 </h1>
 
-<a href="https://app.netlify.com/sites/thechatroom/deploys" target="_blank">
+<a align="center" href="https://app.netlify.com/sites/thechatroom/deploys" target="_blank">
 	https://thechatroom.netlify.app/login
 </a>
 
