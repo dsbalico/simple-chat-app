@@ -2,6 +2,7 @@
 <h1 align="center">
 	ChatRoom
 </h1>
+
 ![Chatroom](https://firebasestorage.googleapis.com/v0/b/chatroom-9bbc0.appspot.com/o/room.png?alt=media&token=81770376-8e31-422b-8e7a-907d93a6f7c3)
 
 <p align="center">
@@ -27,4 +28,3 @@ yarn install
 ```sh
 npm start
 ```
-
